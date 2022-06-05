@@ -26,17 +26,21 @@ In the table below all the input (that the user has to input in order to make th
 
 |Case|Type|Conditions|
 |----|----|----------|
+|Name of Sportclub|`String`|not empty|
 |Name Of Member|`String` |not empty|
-|DOB of Member|`dd:mm:yyyy` |not empty|
+|DOB of Member|`DateTime` |dd-mm-yyyy|
 |Member since date|`dd:mm:yyyy`|not empty|
-|PLayingMember|`boolean`|not empty|
+|PlayingMember|`boolean`|not empty|
+|Member ID|`int`|not empty|
 
 #### Output
 
 |Case|Type|
 |----|----|
-|Customers from a certain city|`ArrayList<Member>`|
-|Total contribution of all the members in the sportclub|`ArrayList<Contribution>`|
+|The cumulative total contribution price|`float`|
+|Youngest member at the sportclub|`String`|
+|The average number of membership years|`int`|
+|Contribution price for a member|`float`|
 
 
 #### Calculations
@@ -53,9 +57,13 @@ In the table below all the input (that the user has to input in order to make th
 * Only the Main class will contain `System.out.println`
 * Unit Tests will be provided.
 
+## Lay-out of GUI
+
+![GUI](img/GUI.png "First Version of the GUI")
+
 ## Class Diagram
 
-![Class Diagram](img/contribution.png "First Version of the class diagram")
+![Class Diagram](img/contribution.png "Second Version of the class diagram")
 
 ## Testplan
 
