@@ -63,7 +63,7 @@ In the table below all the input (that the user has to input in order to make th
 
 ## Class Diagram
 
-![Class Diagram](img/contribution.png "Second Version of the class diagram")
+![Class Diagram](img/contribution.png "Third Version of the class diagram")
 
 ## Testplan
 
@@ -89,6 +89,31 @@ In the following table you'll find all the data that is needed for testing.
 | ID        | Input                                                        | Code                                               |
 | --------- | ------------------------------------------------------------ | -------------------------------------------------- |
 | `Ice skating club`| name: Ice skating club<br /> | `new Sportclub("Ice skating club")`|
+
+### Test Data users windows form application
+
+#### #1 Add member page
+
+|Input|Ouput|
+|-----|-----|
+|Name of a member|It will save the data|
+|Birthdate of a member|It will save the data|
+|Start membership date|It will save the data|
+|Is it a playing member or not|It will save the data|
+|unique id number for a member|It will save the data|
+
+#### #2 Member page
+
+When you filled in the forms in the add member page, it will show on the memberpage
+
+#### #3 Sportclub page
+|Input|Ouput|
+|-----|-----|
+|Name of the sportclub|It will save the data|
+
+#### #4 Settings page
+
+In this page u can choose which club information u want to see
 
 ### Test Cases
 
@@ -126,7 +151,7 @@ Testing the method to calculate the total contribution price of all the members 
 
 #### #4 Getting the youngest member of the sportclub
 
-Testing the method to show the youngest member of the sportclub
+Testing the method to show the youngest member of the sportclub.
 
 |Step|Input|Action|Expected output|
 |----|-----|------|---------------|
@@ -134,7 +159,7 @@ Testing the method to show the youngest member of the sportclub
 
 #### #5 Getting the average amount of membership years
 
-Testing the method of calculating the average amount of membership years
+Testing the method of calculating the average amount of membership years.
 
 |Step|Input|Action|Expected output|
 |----|-----|------|---------------|
