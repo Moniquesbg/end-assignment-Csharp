@@ -90,31 +90,6 @@ In the following table you'll find all the data that is needed for testing.
 | --------- | ------------------------------------------------------------ | -------------------------------------------------- |
 | `Ice skating club`| name: Ice skating club<br /> | `new Sportclub("Ice skating club")`|
 
-### Test Data users windows form application
-
-#### #1 Add member page
-
-|Input|Ouput|
-|-----|-----|
-|Name of a member|It will save the data|
-|Birthdate of a member|It will save the data|
-|Start membership date|It will save the data|
-|Is it a playing member or not|It will save the data|
-|unique id number for a member|It will save the data|
-
-#### #2 Member page
-
-When you filled in the forms in the add member page, it will show on the memberpage
-
-#### #3 Sportclub page
-|Input|Ouput|
-|-----|-----|
-|Name of the sportclub|It will save the data|
-
-#### #4 Settings page
-
-In this page u can choose which club information u want to see
-
 ### Test Cases
 
 In this section the testcases will be described. Every test case should be executed with the test data as starting point.
@@ -165,6 +140,15 @@ Testing the method of calculating the average amount of membership years.
 |----|-----|------|---------------|
 |1|`Members`|`calAverageMembershipYears(ArrayList<Member>)`|6 years|
 
+### User testplan
 
-
-
+|input|       |                                    | |Expected output       |               |
+|-----|-------|---------------------|--------------|------------------------|---------------|
+|Step|Birthday|Start membership date|playing member|Contribution price      |Youngest member|
+|1|22-09-2006 |05-11-2020           |FALSE         |75                      |Youngest member|
+|2|22-10-2006 |05-11-2020           |TRUE          |120                     | -             |
+|3|22-10-2006 |05-11-2014           |TRUE          |114                     | -             |
+|4|22-09-2002 |05-11-2020           |FALSE         |150                     | -             |
+|5|22-09-2002 |05-11-2020           |TRUE          |195                     | -             |
+|6|22-09-2002 |05-11-2014           |FALSE         |142,50                  | -             |
+|Expected output||Average membership years is: 6 years|| Total Contribution: 753,75|        |
